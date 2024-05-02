@@ -1,0 +1,278 @@
+
+.hero {
+    background-color: #555; /* Custom hero background color */
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero .button {
+    padding: 15px 30px;
+    background-color: #FFD700; /* Custom button color */
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .button:hover {
+    background-color: #4CAF50; /* Change button color on hover */
+}
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    background-color: #ffffff; /* Custom header color */
+    padding: 20px 0;
+}
+
+.logo img {
+    max-width: 55px;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #405dff; /* Change color on hover */
+}
+
+.cta .button {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Custom button color */
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta .button:hover {
+    background-color: #555; /* Change button color on hover */
+}
+.about {
+    background-color: #555; /* Custom about section color */
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.about .button {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Custom button color */
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.about .button:hover {
+    background-color: #4CAF50; /* Change button color on hover */
+}
+.programs {
+    background-color: #FFD700; /* Custom programs section color */
+    color: #000;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.programs h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.programs p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.programs .button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Custom button color */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.programs .button:hover {
+    background-color: #555; /* Change button color on hover */
+}
+.admissions {
+    background-color: #555; /* Custom admissions section color */
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.admissions h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.admissions p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.admissions .button {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Custom button color */
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.admissions .button:hover {
+    background-color: #4CAF50; /* Change button color on hover */
+}
+.campus-life {
+    background-color: #4CAF50; /* Custom campus life section color */
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.campus-life h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.campus-life p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.campus-life .button {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Custom button color */
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.campus-life .button:hover {
+    background-color: #555; /* Change button color on hover */
+}
+.news-events {
+    background-color: #FFD700; /* Custom news and events section color */
+    color: #000;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.news-events h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.news-events p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.news-events .button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Custom button color */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.news-events .button:hover {
+    background-color: #555; /* Change button color on hover */
+}
+.latest-news {
+    background-color: #555; /* Custom latest news section color */
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.latest-news h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.news-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    width: 300px;
+    margin: 0 20px 20px;
+    padding: 20px;
+    background-color: #FFD700; /* Custom news item background color */
+    border-radius: 5px;
+}
+
+.news-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 1.2em;
+}

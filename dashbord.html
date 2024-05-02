@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#" onclick="showPage('profile')">Profile</a></li>
+                <li><a href="#" onclick="showPage('grades')">Grades</a></li>
+                <li><a href="#" onclick="showPage('calendar')">Calendar</a></li>
+                <li><a href="#" onclick="showPage('attendance')">Attendance</a></li>
+                <li><a href="#" onclick="showPage('feedback')">Feedback</a></li>
+                <li><a href="#" onclick="showPage('settings')">Settings</a></li>
+            </ul>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <div class="content">
+            <div id="profile" class="tab">
+                <h2>Profile</h2>
+                <form id="profileForm">
+                    <label for="profilePic">Profile Picture:</label><br>
+                    <img id="currentProfilePic" src="profile.jpg" alt="Profile Picture"><br>
+                    <button type="button" onclick="changeProfilePic()">Change Picture</button><br>
+                    <input type="file" id="profilePic" accept="image/*" onchange="previewImage(event)">
+                    <div id="imagePreview"></div>
+                    <p>Name: John Doe</p>
+                    <p>Student ID: S123456</p>
+                    <p>Email: john@example.com</p>
+                    <p>Major: Computer Science</p>
+                </form>
+            </div>
+            <div id="grades" class="tab">
+                <h2>Grades</h2>
+                <table>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>B</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="calendar" class="tab">
+                <h2>Calendar</h2>
+                <p>Upcoming events:</p>
+                <ul>
+                    <li>Exam - Math (May 10)</li>
+                    <li>Field trip (May 15)</li>
+                </ul>
+            </div>
+            <div id="attendance" class="tab">
+                <h2>Attendance</h2>
+                <form id="attendanceForm">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date"><br>
+                    <label for="status">Status:</label>
+                    <select id="status" name="status">
+                        <option value="present">Present</option>
+                        <option value="absent">Absent</option>
+                    </select><br>
+                    <button type="button" onclick="markAttendance()">Submit</button>
+                </form>
+            </div>
+            <div id="feedback" class="tab">
+                <h2>Feedback</h2>
+                <form id="feedbackForm">
+                    <div id="staffFeedback"></div>
+                    <button type="button" onclick="addStaffFeedback()">Add Staff</button><br><br>
+                    <button type="button" onclick="submitFeedback()">Submit</button>
+                    <p id="feedbackMessage" style="display: none; color: green;"></p>
+                </form>
+            </div>
+            <div id="timetable" class="tab">
+                <!-- Timetable content -->
+                <h2>Time Table</h2>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>9:00 - 10:00</th>
+                        <th>10:00 - 11:00</th>
+                        <th>11:00 - 12:00</th>
+                        <th>12:00 - 1:00</th>
+                        <th>1:00 - 2:00</th>
+                        <th>2:00 - 3:00</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Math</td>
+                        <td>Science</td>
+                        <td>History</td>
+                        <td>Lunch</td>
+                        <td>English</td>
+                        <td>Computer Science</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>English</td>
+                        <td>Math</td>
+                        <td>Science</td>
+                        <td>Lunch</td>
+                        <td>History</td>
+                        <td>Computer Science</td>
+                    </tr>
+                    <!-- Add more rows for other days -->
+                </table>
+            </div>
+            <div id="settings" class="tab">
+                <h2>Settings</h2>
+                <p>You can customize your settings here.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

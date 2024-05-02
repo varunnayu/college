@@ -1,0 +1,280 @@
+@import url(styles.css);
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+/* Profile */
+#currentProfilePic {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+#profilePic {
+    display: none;
+}
+
+#profileForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#profileForm label {
+    font-weight: bold;
+}
+
+#profileForm button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#profileForm button:hover {
+    background-color: #45a049;
+}
+
+/* Grades */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Calendar */
+#calendar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#calendar ul li {
+    margin-bottom: 10px;
+}
+
+/* Attendance */
+#attendanceForm {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#attendanceForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#attendanceForm select, #attendanceForm input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#attendanceForm button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#attendanceForm button:hover {
+    background-color: #45a049;
+}
+
+/* Feedback */
+#staffFeedback {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.staff {
+    text-align: center;
+    margin: 0 20px 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.staff:hover {
+    transform: translateY(-5px);
+}
+
+.staff img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.staff p {
+    margin-bottom: 10px;
+}
+
+.staff input[type="checkbox"] {
+    display: none;
+}
+
+.staff label {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.staff input[type="checkbox"]:checked + label {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#feedbackForm button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#feedbackForm button:hover {
+    background-color: #45a049;
+}
+
+#feedbackMessage {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d4edda;
+    color: #155724;
+}
+/* Timetable styles */
+#timetable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#timetable th, #timetable td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#timetable th {
+    background-color: #f2f2f2;
+}
+
+#timetable td {
+    background-color: #fff;
+}
+
+#timetable td:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#timetable th, #timetable td {
+    min-width: 120px;
+}
+
+@media (max-width: 768px) {
+    #timetable table {
+        width: auto;
+    }
+
+    #timetable th, #timetable td {
+        min-width: auto;
+    }
+}
